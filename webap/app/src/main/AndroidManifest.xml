@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gerard.g.suarez.webap"
+    tools:ignore="ExtraText">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+//en este apartado  se asigno el acceso a internet ademas de cambiar el icono de la aplicacion
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dicc"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dicc"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Webap">
+
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Webap.NoActionBar"/>
+
+        <activity
+            android:name=".MainActivity7"
+            android:exported="false"
+            android:theme="@style/Theme.Webap.NoActionBar"/>
+        <activity
+            android:name=".MainActivity6"
+            android:exported="false"
+            android:theme="@style/Theme.Webap.NoActionBar"/>
+        <activity
+            android:name=".MainActivity5"
+            android:exported="false"
+            android:theme="@style/Theme.Webap.NoActionBar"/>
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false"
+            android:theme="@style/Theme.Webap.NoActionBar" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Webap.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
